@@ -3,19 +3,30 @@
  */
 package ifsc.poo;
 import edu.princeton.cs.algs4.Draw;
+import org.checkerframework.checker.units.qual.N;
 
 public class App {
     edu.princeton.cs.algs4.Draw draw;
 
     public App() {
         Grade grade = new Grade(10, 10);
+        Navio navio1 = new Navio(4, 1, 1, "horizontal");
+        Navio navio2 = new Navio(3, 6, 2, "vertical");
+        Navio navio3 = new Navio(5, 4, 3, "vertical");
+        Navio navio4 = new Navio(3,8,6, "vertical");
+        Navio navio5 = new Navio(2, 2, 9, "horizontal");
         this.draw = new Draw();
         this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
         this.draw.setCanvasSize(1000, 600); //Define o tamanho da janela
         this.draw.setXscale(0, 1000); //Escala em X
         this.draw.setYscale(0, 600); //Escala em Y
         grade.desenhar(draw);
-        }
+        navio1.desenhar(draw);
+        navio2.desenhar(draw);
+        navio3.desenhar(draw);
+        navio4.desenhar(draw);
+        navio5.desenhar(draw);
+    }
     public static void main(String[] args) {
         App app = new App();
         app.draw.show();
