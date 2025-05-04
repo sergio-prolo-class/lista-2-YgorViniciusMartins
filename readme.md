@@ -24,7 +24,7 @@ e outra classe para os navios.
 
 ## Biblioteca algs:  
 
-Como este programa tem como objetivo exibir este tabuleiro na tela para o usuário, utilizou-se a biblioteca algs, maiis especificadamente
+Como este programa tem como objetivo exibir este tabuleiro na tela para o usuário, utilizou-se a biblioteca algs, mais especificadamente
 a classe Draw que esta porta. A classe Draw é responável por criar a janela e também por desenhar os nossos objetos nela.  
 
 ---
