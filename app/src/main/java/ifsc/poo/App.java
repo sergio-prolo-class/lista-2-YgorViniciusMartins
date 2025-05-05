@@ -9,9 +9,9 @@ public class App {
     edu.princeton.cs.algs4.Draw draw;
 
     public App() {
-        Grade grade = new Grade(10, 10, 0, 0);
-        Grade grade2 = new Grade(10, 10, 500, 0);
-        Navio navio1 = new Navio(4, 1, 1, "horizontal");
+        Grade grade = new Grade(10, 10, 0, 0); //Grade da esquerda que contém os navios
+        Grade grade2 = new Grade(10, 10, 500, 0); //Grade da direita vazia
+        Navio navio1 = new Navio(4, 1, 1, "horizontal"); //Criação dos navios
         Navio navio2 = new Navio(3, 6, 2, "vertical");
         Navio navio3 = new Navio(5, 4, 3, "vertical");
         Navio navio4 = new Navio(3,8,6, "vertical");
@@ -21,13 +21,13 @@ public class App {
         this.draw.setCanvasSize(1000, 600); //Define o tamanho da janela
         this.draw.setXscale(0, 1000); //Escala em X
         this.draw.setYscale(0, 600); //Escala em Y
-        navio1.desenhar(draw);
+        navio1.desenhar(draw); //Desenha inicialmente os 5 navios na tela
         navio2.desenhar(draw);
         navio3.desenhar(draw);
         navio4.desenhar(draw);
         navio5.desenhar(draw);
-        grade.desenhar(draw);
-        grade2.desenhar(draw);
+        grade.desenhar(draw); //Desenha a grade que contém os navios
+        grade2.desenhar(draw); //Desenha a grade vazia
     }
     public static void main(String[] args) {
         App app = new App();

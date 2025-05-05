@@ -32,7 +32,18 @@ a classe Draw que esta porta. A classe Draw é responável por criar a janela e 
 ## Grade:  
 
 A classe grade tem como objetivo representar o tabuleiro de batalha naval, esta é responável por moldar o tamanho do tabuleiro, tal como
-sua legende para cada posição do tabuleiro.   
+sua legende para cada posição do tabuleiro.  
+
+*new Grade(int linhas, int colunas, int x_orig, int y_orig):* Método construtor da classe, em outras palavras, cria a grade (se falhar, cria uma grade 10x10 na origem)   
+*boolean setLinhas(int linhas):* Seta a quantide de linhas (não aceita números não positivos)  
+*boolean setColunas (int colunas):* Seta a quantide de colunas (não aceita números não positivos)  
+*boolean setXOrig(int x_orig):* Seta a posição x de origem de criação da grade (não aceita números não positivos)  
+*boolean setYOrig(int y_orig):* Seta a posição y de origem de criação da grade (não aceita números não positivos)  
+*int getLinhas():* Obtém a quantidade de linhas da grade  
+*int getColunas():* Obtém a quantidade de colunas da grade  
+*int getX_orig():* Obtém a posição x de origem de criação da grade  
+*int getY_orig():* Obtém a posição y de origem de criação da grade  
+*void desenhar(Draw draw):* Desenha a grade na tela  
 
 ---
 
@@ -40,4 +51,11 @@ sua legende para cada posição do tabuleiro.
 
 A classe navio tem como objetivo representar os navios que serão colocados no tabuleiro, tal classe porta dados como o tamanho do navio,
 sua direção e sua posição de origem.
+
+*new Navio(int tamanho, int x, int y, String orientacao):* Método construtor do navio, em outra palavras, cria o navio (se falhar, cria navio inutilizável)  
+*boolean setTamanho(int tamanho):* Seta o tamanho do navio (não aceita números não positivos)  
+*boolean setX(int x):* Seta a posição x de origem (Não aceita números não positivos)  
+*boolean setY(int y):* Seta a posição y de origem (Não aceita números não positivos)  
+*boolean setOrientacao(String orientacao):* Seta a orientação do navio na grade  
+*void desenhar(Draw draw):* Desenha o navio na grade  
 
