@@ -22,6 +22,20 @@ e outra classe para os navios.
 
 ---
 
+## Como executar:  
+
+Para executar o program, digite no terminal
+
+> ./gradlew run
+
+Caso o terminal informe que a permissão negada basta inserir no terminal:
+
+> chmod +x gradlew
+
+Após isso, o ./gradlew run deve funcionar normalmente
+
+---
+
 ## Biblioteca algs:  
 
 Como este programa tem como objetivo exibir este tabuleiro na tela para o usuário, utilizou-se a biblioteca algs, mais especificadamente
