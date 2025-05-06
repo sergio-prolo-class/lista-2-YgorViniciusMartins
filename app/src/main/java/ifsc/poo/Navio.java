@@ -55,13 +55,13 @@ public class Navio {
     public void desenhar(Draw draw){
         draw.setPenColor(Draw.BOOK_RED);
         if(orientacao.equals("horizontal")){
-            for (int i = 1; i - 2 <= this.tamanho ; i += 2) { //Desenha o navio na horizontal
+            for (int i = 1; i - this.tamanho <= this.tamanho ; i += 2) { //Desenha o navio na horizontal
                 draw.filledSquare((this.x * tam_cel) + ((tam_cel / 2.0) * i), this.y * tam_cel + tam_cel / 2.0, tam_cel / 2.0);
             }
         }
 
         if(orientacao.equals("vertical")){ //Desenha o navio na vertical
-            for (int i = 1; i - 2 <= this.tamanho ; i += 2) {
+            for (int i = 1; i - this.tamanho <= this.tamanho ; i += 2) {
                 draw.filledSquare(this.x * tam_cel + tam_cel / 2.0, (this.y * tam_cel) + ((tam_cel / 2.0) * i), tam_cel / 2.0);
             }
         }

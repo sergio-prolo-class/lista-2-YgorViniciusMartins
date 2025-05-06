@@ -43,7 +43,7 @@ sua legende para cada posição do tabuleiro.
 *int getColunas():* Obtém a quantidade de colunas da grade  
 *int getX_orig():* Obtém a posição x de origem de criação da grade  
 *int getY_orig():* Obtém a posição y de origem de criação da grade  
-*void desenhar(Draw draw):* Desenha a grade na tela  
+*void desenhar(Draw draw):* Desenha a grade na tela
 
 ---
 
@@ -59,3 +59,7 @@ sua direção e sua posição de origem.
 *boolean setOrientacao(String orientacao):* Seta a orientação do navio na grade  
 *void desenhar(Draw draw):* Desenha o navio na grade  
 
+### Observação  
+
+No programa a grade 10x10, inicia na posiçã 1 e vai até a posição 10, sendo assim, a posição no canto inferior esquerdo é de 1,1.
+Enquanto a posição do canto superior direito é a posição 10,10
